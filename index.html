@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasad Kashid - Portfolio</title>
+    <link rel="stylesheet" href="style .css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <b>Portfolio</b>
+            <ul class="navparent">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="parentdiv">
+        <div class="details">
+            <p>Hello! I Am <span class="red">Prasad Kashid</span><br/>
+            <span class="color">Full Stack Developer</span></p>
+        </div>
+        <div class="imagedetail">
+            <img src="port.png" alt="Prasad Kashid" style="height: 400px;">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2 style="text-align: center;">About Me</h2>
+        <p>Hello! I'm Prasad Kashid, a passionate web developer and Java programmer with a keen interest in creating innovative solutions for sustainable development. With a solid foundation in both front-end and back-end technologies, I aim to leverage my skills to contribute to projects that make a positive impact on our world.</p>
+    </section>
+
+    <section id="projects">
+        <h1 style="color: #1e2a38; text-align: center;">My Work</h1><br>
+        <div class="mywork">
+            <div class="card">
+                <div class="first-content">
+                    <p>Weather Forecast</p>
+                </div>
+                <div class="second-content">
+                    <ul>
+                        <li>Gives description of weather</li>
+                        <li>Predicts rain</li>
+                        <li>Shows temperature</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="first-content">
+                    <p>Online Education Website</p>
+                </div>
+                <div class="second-content">
+                    <ul>
+                        <li>Responsive</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="first-content"> 
+                    <p>Student Result Management</p>
+                </div>
+                <div class="second-content">
+                    <ul>
+                        <li>Manages student results</li>
+                        <li>Generates report cards</li>
+                        <li>Provides analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="parentContact">
+        <h1>Contact Me</h1>
+        <form class="contactForm">
+            <label for="name">Your Name</label><br/>
+            <input type="text" id="name" name="name" placeholder="Your name" required><br/>
+            <label for="email">E-mail</label><br/>
+            <input type="email" id="email" name="email" placeholder="E-mail" required><br/>
+            <label for="phone">Phone No.</label><br/>
+            <input type="tel" id="phone" name="phone" placeholder="Phone No."><br/>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

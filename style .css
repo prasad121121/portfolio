@@ -1,0 +1,193 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  line-height: 1.6;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #1e2a38;
+  color: white;
+}
+
+.nav b {
+  font-size: 24px;
+}
+
+.navparent {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 17px;
+}
+
+.navparent li {
+  cursor: pointer;
+}
+
+.navparent li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navparent li a:hover {
+  text-decoration: underline;
+}
+
+/* Home section styles */
+.parentdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  background-color: #e8eaf6;
+}
+
+.details, .imagedetail {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.details {
+  font-size: 50px;
+  margin-left: 100px;
+}
+
+.red {
+  color: #e53935;
+}
+
+.color {
+  font-size: 30px;
+  transition: font-size 0.3s, color 0.3s;
+}
+
+.color:hover {
+  font-size: 35px;
+  color: #1e88e5;
+}
+
+/* About section styles */
+.about {
+  margin: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+/* My Work section styles */
+.mywork {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.card {
+  width: 200px;
+  height: 260px;
+  background: #90caf9;
+  transition: all 0.4s;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.1);
+  background: #64b5f6;
+}
+
+.first-content {
+  transition: all 0.4s;
+  opacity: 1;
+}
+
+.card:hover .first-content {
+  opacity: 0;
+  height: 0;
+}
+
+.second-content {
+  opacity: 0;
+  transform: rotate(90deg);
+  transition: all 0.4s;
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+/* Contact section styles */
+.parentContact {
+  padding: 50px;
+  background-color: #1e2a38;
+  text-align: center;
+  color: white;
+}
+
+.contactDetails h1 {
+  color: white;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactForm input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contactForm input[type="text"], .contactForm input[type="email"], .contactForm input[type="tel"] {
+  background-color: #fff;
+}
+
+.contactForm button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #e53935;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+  background-color: #d32f2f;
+}
